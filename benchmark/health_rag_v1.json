@@ -1,0 +1,176 @@
+{
+ "name": "health-rag",
+ "version": 1,
+ "description": "Intent routing for one health-insurance RAG app: 6 routes, 20 questions, 5 per slice (MSA, Emirati, Saudi, mixed Arabic-English), one clear route each. Main Jev-AR benchmark from 2026-09-24 (user decision). Never train on it.",
+ "author": "Written by Claude (Opus 5.5); routes, questions and labels approved by the user on 2026-09-24",
+ "instruction": {
+  "en": "Which route should this message go to?",
+  "ar": "إلى أي مسار يجب توجيه هذه الرسالة؟"
+ },
+ "routes": [
+  {
+   "id": "faq",
+   "name_en": "FAQ",
+   "desc_en": "General how-to questions: claims process, insurance card, app, working hours, documents.",
+   "name_ar": "الأسئلة الشائعة",
+   "desc_ar": "أسئلة عامة عن طريقة العمل: إجراءات المطالبات، بطاقة التأمين، التطبيق، ساعات العمل، المستندات."
+  },
+  {
+   "id": "escalate",
+   "name_en": "Escalate to a human",
+   "desc_en": "The user asks for a human agent, complains, or has an urgent problem.",
+   "name_ar": "التحويل إلى موظف",
+   "desc_ar": "المستخدم يطلب موظفاً، أو يشتكي، أو لديه مشكلة عاجلة."
+  },
+  {
+   "id": "benefits",
+   "name_en": "Benefits",
+   "desc_en": "What the plan covers and how much: limits, co-payment, maternity, dental, optical.",
+   "name_ar": "المزايا",
+   "desc_ar": "ما تغطيه الوثيقة وبأي قدر: الحدود، نسبة التحمل، الولادة، الأسنان، النظارات."
+  },
+  {
+   "id": "exclusions",
+   "name_en": "Exclusions",
+   "desc_en": "What the plan does not cover: excluded treatments and conditions.",
+   "name_ar": "الاستثناءات",
+   "desc_ar": "ما لا تغطيه الوثيقة: العلاجات والحالات المستثناة."
+  },
+  {
+   "id": "network_check",
+   "name_en": "Network check",
+   "desc_en": "Whether a specific named hospital or clinic is in the user's network.",
+   "name_ar": "التحقق من الشبكة",
+   "desc_ar": "هل مستشفى أو عيادة محددة بالاسم ضمن شبكة المستخدم."
+  },
+  {
+   "id": "nearest_provider",
+   "name_en": "Nearest in-network provider",
+   "desc_en": "Where the nearest in-network hospital or clinic is to a given place.",
+   "name_ar": "أقرب مقدم خدمة ضمن الشبكة",
+   "desc_ar": "أين يقع أقرب مستشفى أو عيادة ضمن الشبكة من مكان معين."
+  }
+ ],
+ "questions": [
+  {
+   "id": 1,
+   "slice": "msa",
+   "text": "ما هي نسبة التحمل التي أدفعها عند زيارة الطبيب ضمن وثيقتي؟",
+   "route": "benefits"
+  },
+  {
+   "id": 2,
+   "slice": "msa",
+   "text": "ما العلاجات والحالات المستثناة من وثيقتي؟",
+   "route": "exclusions"
+  },
+  {
+   "id": 3,
+   "slice": "msa",
+   "text": "هل مستشفى كليفلاند كلينك أبوظبي ضمن شبكة وثيقتي؟",
+   "route": "network_check"
+  },
+  {
+   "id": 4,
+   "slice": "msa",
+   "text": "أين أقرب مستشفى ضمن شبكتي إلى منطقة الخالدية في أبوظبي؟",
+   "route": "nearest_provider"
+  },
+  {
+   "id": 5,
+   "slice": "msa",
+   "text": "كيف أقدم طلب استرداد للمصاريف التي دفعتها بنفسي؟",
+   "route": "faq"
+  },
+  {
+   "id": 6,
+   "slice": "emirati",
+   "text": "كم يغطي التأمين مالي من مصاريف الأسنان؟",
+   "route": "benefits"
+  },
+  {
+   "id": 7,
+   "slice": "emirati",
+   "text": "شو الأشياء اللي ما يغطيها التأمين مالي؟",
+   "route": "exclusions"
+  },
+  {
+   "id": 8,
+   "slice": "emirati",
+   "text": "مستشفى الزهراء في دبي داخل الشبكة مالي؟",
+   "route": "network_check"
+  },
+  {
+   "id": 9,
+   "slice": "emirati",
+   "text": "وين أقرب عيادة في الشبكة عن البرشاء؟",
+   "route": "nearest_provider"
+  },
+  {
+   "id": 10,
+   "slice": "emirati",
+   "text": "أبا أكلم موظف الحين، ما أبا البوت",
+   "route": "escalate"
+  },
+  {
+   "id": 11,
+   "slice": "saudi",
+   "text": "كم الحد الأعلى للتغطية السنوية في بوليصتي؟",
+   "route": "benefits"
+  },
+  {
+   "id": 12,
+   "slice": "saudi",
+   "text": "عمليات التجميل مستثناة من التأمين ولا لا؟",
+   "route": "exclusions"
+  },
+  {
+   "id": 13,
+   "slice": "saudi",
+   "text": "مستشفى الحبيب في الرياض يقبل تأميني؟",
+   "route": "network_check"
+  },
+  {
+   "id": 14,
+   "slice": "saudi",
+   "text": "كيف أطلع بطاقة التأمين الرقمية من التطبيق؟",
+   "route": "faq"
+  },
+  {
+   "id": 15,
+   "slice": "saudi",
+   "text": "رفضتوا مطالبتي بدون سبب وأبي أرفع شكوى",
+   "route": "escalate"
+  },
+  {
+   "id": 16,
+   "slice": "mixed",
+   "text": "Maternity coverage كم تغطي بالضبط؟",
+   "route": "benefits"
+  },
+  {
+   "id": 17,
+   "slice": "mixed",
+   "text": "Is Mediclinic ضمن الـ network حقي؟",
+   "route": "network_check"
+  },
+  {
+   "id": 18,
+   "slice": "mixed",
+   "text": "Nearest in-network clinic لي في النهدة الشارقة وين؟",
+   "route": "nearest_provider"
+  },
+  {
+   "id": 19,
+   "slice": "mixed",
+   "text": "What are the working hours حق خدمة العملاء؟",
+   "route": "faq"
+  },
+  {
+   "id": 20,
+   "slice": "mixed",
+   "text": "صار لي أسبوعين أنتظر الـ approval، I need to speak to someone urgently",
+   "route": "escalate"
+  }
+ ]
+}
