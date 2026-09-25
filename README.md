@@ -126,7 +126,7 @@ The held-out test set is on the [benchmark dataset](https://huggingface.co/datas
 | Code in this repository | Apache-2.0 |
 | Benchmark data | CC BY 4.0 |
 
-**Commercial use** of the model needs a licence; contact **ayoutatmane23@gmail.com**. Third-party credits are in
+**Commercial use** of the model needs a licence; contact **ayoubatmane23@gmail.com**. Third-party credits are in
 [NOTICE](NOTICE).
 
 ## Citation

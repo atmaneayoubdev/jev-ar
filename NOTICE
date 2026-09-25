@@ -5,7 +5,7 @@ Code (jev_ar_route.py, benchmark/*.py): Apache License 2.0 (LICENSE).
 Benchmark data (benchmark/health_rag_v1.json): CC BY 4.0 (LICENSE-DATA). It was written with Claude (Anthropic)
 and reviewed by the author.
 Model weights (https://huggingface.co/atmaneayoub/jev-ar): CC BY-NC 4.0; commercial licensing:
-ayoutatmane23@gmail.com. They build on jhu-clsp/mmBERT-base (MIT) and convaiinnovations/laya (Apache-2.0).
+ayoubatmane23@gmail.com. They build on jhu-clsp/mmBERT-base (MIT) and convaiinnovations/laya (Apache-2.0).
 
 Portions of jev_ar_route.py (the model head and the input format) are adapted from the laya package
 (https://pypi.org/project/laya/, by Convai Innovations, Apache License 2.0).
