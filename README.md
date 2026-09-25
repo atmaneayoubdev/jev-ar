@@ -6,7 +6,7 @@
 
 [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-atmaneayoub%2Fjev--ar-FFD21E)](https://huggingface.co/atmaneayoub/jev-ar)
 [![Benchmark](https://img.shields.io/badge/%F0%9F%A4%97%20Benchmark-jev--ar--bench-F97316)](https://huggingface.co/datasets/atmaneayoub/jev-ar-bench)
-![Parameters](https://img.shields.io/badge/params-307M-2A78D6)
+![Parameters](https://img.shields.io/badge/params-322M-2A78D6)
 ![Latency](https://img.shields.io/badge/latency-~10%20ms%20%2F%20query-2A78D6)
 [![Weights: CC BY-NC 4.0](https://img.shields.io/badge/weights-CC%20BY--NC%204.0-6B7280)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-16A34A)](LICENSE)
@@ -43,7 +43,7 @@ confidence intervals.
 |:--|:--:|:--:|:--:|:--:|:--:|
 | Qwen3.8-27B (LLM, list in prompt) | 27B | GPU server | 90.0 | 94.0 | 634 ms † |
 | Jev 1.13 (TypeSafe) | undisclosed | closed API | 86.2 | 91.4 | 370 ms † |
-| **Jev-AR** | **307M** | **local** | **83.4** <sub>[81.2–85.4]</sub> | **90.0** <sub>[88.4–91.4]</sub> | **10 ms** |
+| **Jev-AR** | **322M** | **local** | **83.4** <sub>[81.2–85.4]</sub> | **90.0** <sub>[88.4–91.4]</sub> | **10 ms** |
 | mmBERT-base, fine-tuned classifier | 307M | local | 76.5 | 79.8 | 6 ms |
 | multilingual-E5-base + logistic regression | 278M | local | 72.4 | 77.4 | 4 ms |
 
