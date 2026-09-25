@@ -19,11 +19,12 @@ Jev-AR reads a user message and **your list of routes** (a RAG app's knowledge b
 bot's intents) and picks the right one in a single forward pass. It returns calibrated probabilities and an
 **escalate** flag for when it is unsure. It also ships with 60 built-in UAE + KSA government-service routes.
 
-- **Your own routes, no retraining.** Pass any route list at request time: up to 60 short names, or about 20 routes
-  with one-line descriptions.
+- **Your own routes, no retraining.** Pass any route list at request time: up to 60 short names, or about 15–20
+  routes with one-line descriptions (fewer when the descriptions are long or in Arabic).
 - **Gulf Arabic.** MSA, Emirati and Saudi dialects, and Arabic mixed with English.
 - **Knows when it doesn't know.** A calibrated confidence and an escalation threshold fitted for 95% accuracy.
-- **Small and fast.** 307M parameters: 10–20 ms per message on a GPU and about 0.1 s on a CPU.
+- **Small and fast.** 307M parameters: about 10 ms per message on a GPU. On a laptop CPU (8 threads), about 0.15 s
+  with a short route list and about 0.45 s with all 60 government routes.
 
 ## Results
 
@@ -92,6 +93,8 @@ router.route("ابي اجدد الاقامة")
 
 **Tips:** Keep route names and descriptions short, since the whole list must fit in 512 tokens; the helper raises
 an error rather than silently cutting options. Treat `escalate: True` as "send to a person or a fallback".
+On a CPU, call `torch.set_num_threads(8)` (or your number of performance cores) first: PyTorch's default of one
+thread per logical core can be several times slower on laptop CPUs.
 
 ## Reproduce the benchmark
 
