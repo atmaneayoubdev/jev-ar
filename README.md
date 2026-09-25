@@ -50,14 +50,14 @@ from jev_ar_route import JevAR
 
 router = JevAR()  # downloads atmaneayoub/jev-ar on first use
 
-routes = {
-    "FAQ": "General how-to questions: claims process, insurance card, app, working hours, documents.",
-    "Escalate to a human": "The user asks for a human agent, complains, or has an urgent problem.",
-    "Benefits": "What the plan covers and how much: limits, co-payment, maternity, dental, optical.",
-    "Nearest in-network provider": "Where the nearest in-network hospital or clinic is to a given place.",
+tools = {  # an assistant's tools: any routes you like, given at request time
+    "Calendar": "Create, move or cancel meetings and reminders.",
+    "Email": "Write, reply to or send emails.",
+    "Web search": "Look up current or public information: news, prices, facts.",
+    "Human agent": "The user asks for a person, or the request is sensitive or legal.",
 }
-router.route("ابغى اكلم احد من خدمة العملاء ضروري", routes)
-# {'route': 'Escalate to a human', 'confidence': 0.93, 'escalate': False, 'probabilities': {...}}
+router.route("وش آخر أخبار أسعار الذهب اليوم؟", tools)
+# {'route': 'Web search', 'confidence': 0.88, 'escalate': False, 'probabilities': {...}}
 ```
 
 [`jev_ar_route.py`](jev_ar_route.py) is one self-contained file that needs only `torch`, `transformers` and
