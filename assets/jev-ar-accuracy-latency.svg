@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Jev-AR: accuracy vs. latency</title>
+<desc id="d">mE5 + LogReg: 72.4% at 3.9 ms; Fine-tuned classifier: 76.5% at 6.3 ms; Jev-AR (307M): 83.4% at 10.1 ms; Jev 1.13 (API): 86.2% at 370 ms; Qwen3.8-27B: 90.0% at 634.1 ms</desc>
+<style>
+  .surface{fill:#fcfcfb}.frame{fill:none;stroke:rgba(11,11,11,.10)}
+  .t1{fill:#0b0b0b}.t2{fill:#52514e}.tm{fill:#898781}
+  .grid{stroke:#e1e0d9;stroke-width:1}.axis{stroke:#c3c2b7;stroke-width:1}
+  .ctx{fill:#898781;stroke:#fcfcfb;stroke-width:2}.ours{fill:#2a78d6;stroke:#fcfcfb;stroke-width:2}
+  .halo{fill:#2a78d6;opacity:.14}.lead{stroke:#2a78d6;stroke-width:1.5}
+  @media (prefers-color-scheme: dark){
+    .surface{fill:#1a1a19}.frame{stroke:rgba(255,255,255,.10)}
+    .t1{fill:#ffffff}.t2{fill:#c3c2b7}.tm{fill:#898781}
+    .grid{stroke:#2c2c2a}.axis{stroke:#383835}
+    .ctx{fill:#898781;stroke:#1a1a19}.ours{fill:#3987e5;stroke:#1a1a19}
+    .halo{fill:#3987e5;opacity:.18}.lead{stroke:#3987e5}
+  }
+</style>
+<rect class="surface" width="800" height="470" rx="14"/><rect class="frame" x=".5" y=".5" width="799" height="469" rx="14"/>
+<text class="t1" x="32" y="40" font-size="20" font-weight="650">Accuracy vs. latency</text>
+<text class="t2" x="32" y="64" font-size="13.5">Jev-AR Bench · 4,974 held-out Gulf-Arabic queries · 60 routes · batch 1</text>
+<line class="grid" x1="92" x2="764" y1="392.0" y2="392.0"/>
+<text class="tm" x="82" y="396.0" font-size="12" text-anchor="end">65%</text>
+<line class="grid" x1="92" x2="764" y1="344.0" y2="344.0"/>
+<text class="tm" x="82" y="348.0" font-size="12" text-anchor="end">70%</text>
+<line class="grid" x1="92" x2="764" y1="296.0" y2="296.0"/>
+<text class="tm" x="82" y="300.0" font-size="12" text-anchor="end">75%</text>
+<line class="grid" x1="92" x2="764" y1="248.0" y2="248.0"/>
+<text class="tm" x="82" y="252.0" font-size="12" text-anchor="end">80%</text>
+<line class="grid" x1="92" x2="764" y1="200.0" y2="200.0"/>
+<text class="tm" x="82" y="204.0" font-size="12" text-anchor="end">85%</text>
+<line class="grid" x1="92" x2="764" y1="152.0" y2="152.0"/>
+<text class="tm" x="82" y="156.0" font-size="12" text-anchor="end">90%</text>
+<line class="grid" x1="92" x2="764" y1="104.0" y2="104.0"/>
+<text class="tm" x="82" y="108.0" font-size="12" text-anchor="end">95%</text>
+<line class="grid" x1="248.6" x2="248.6" y1="104" y2="392"/>
+<text class="tm" x="248.6" y="412" font-size="12" text-anchor="middle">10 ms</text>
+<line class="grid" x1="472.6" x2="472.6" y1="104" y2="392"/>
+<text class="tm" x="472.6" y="412" font-size="12" text-anchor="middle">100 ms</text>
+<line class="grid" x1="696.6" x2="696.6" y1="104" y2="392"/>
+<text class="tm" x="696.6" y="412" font-size="12" text-anchor="middle">1 s</text>
+<line class="axis" x1="92" x2="764" y1="392" y2="392"/>
+<text class="t2" x="428" y="436" font-size="12.5" text-anchor="middle">Latency per query (log scale) · local GPU for open models, API / server round trip for Jev and Qwen</text>
+<text class="t2" transform="translate(30,248) rotate(-90)" font-size="12.5" text-anchor="middle">Accuracy</text>
+<path class="lead" fill="none" d="M249.5,239.3 V245.3 H599.8 V239.3"/>
+<text class="t2" x="424.7" y="263.3" font-size="12.5" text-anchor="middle">2.8 pts from the API at ~37× lower latency</text>
+<circle class="ctx" cx="157.0" cy="320.6" r="5.5"/>
+<text class="t2" x="171.0" y="325.1" font-size="13" text-anchor="start">mE5 + LogReg · 72.4%</text>
+<circle class="ctx" cx="203.6" cy="281.8" r="5.5"/>
+<text class="t2" x="217.6" y="286.3" font-size="13" text-anchor="start">Fine-tuned classifier · 76.5%</text>
+<circle class="halo" cx="249.5" cy="215.3" r="15"/>
+<circle class="ours" cx="249.5" cy="215.3" r="7"/>
+<text class="t1" x="263.5" y="219.8" font-size="14" font-weight="650" text-anchor="start">Jev-AR (307M) · 83.4%</text>
+<circle class="ctx" cx="599.8" cy="188.2" r="5.5"/>
+<text class="t2" x="585.8" y="192.7" font-size="13" text-anchor="end">Jev 1.13 (API) · 86.2%</text>
+<circle class="ctx" cx="652.3" cy="151.7" r="5.5"/>
+<text class="t2" x="638.3" y="156.2" font-size="13" text-anchor="end">Qwen3.8-27B · 90.0%</text>
+</svg>
