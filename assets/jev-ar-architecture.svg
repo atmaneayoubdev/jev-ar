@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 432" width="800" height="432" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">How Jev-AR routes a message</title>
+<desc id="d">The message and the caller's route list form one input sequence. The mmBERT-base encoder (307M) reads it, and a 15M decision head gives one probability per route, read at that route's marker. The top route is returned, or the message is escalated when its probability is below the threshold.</desc>
+<style>
+  .surface{fill:#fcfcfb}.frame{fill:none;stroke:rgba(11,11,11,.10)}
+  .t1{fill:#0b0b0b}.t2{fill:#52514e}.tm{fill:#898781}.ta{fill:#2a78d6}
+  .node{fill:#ffffff;stroke:#d6d5cd;stroke-width:1}.model{fill:#f1f6fd;stroke:#b9d3f3;stroke-width:1}
+  .edge{stroke:#a3a29a;stroke-width:1.5;fill:none}.headfill{fill:#a3a29a}
+  .mark{fill:#2a78d6}.bar{fill:#2a78d6}.barctx{fill:#c3c2b7}.track{fill:#efeee9}.rule{stroke:#e1e0d9}
+  .tok{fill:#f4f3ef;stroke:#d6d5cd}.tokm{fill:#2a78d6}
+  @media (prefers-color-scheme: dark){
+    .surface{fill:#1a1a19}.frame{stroke:rgba(255,255,255,.10)}
+    .t1{fill:#ffffff}.t2{fill:#c3c2b7}.tm{fill:#898781}.ta{fill:#3987e5}
+    .node{fill:#222221;stroke:#3a3a37}.model{fill:#1c2635;stroke:#2f4a6e}
+    .edge{stroke:#6b6a64}.headfill{fill:#6b6a64}
+    .mark{fill:#3987e5}.bar{fill:#3987e5}.barctx{fill:#4a4a46}.track{fill:#2a2a28}.rule{stroke:#2c2c2a}
+    .tok{fill:#262625;stroke:#3a3a37}.tokm{fill:#3987e5}
+  }
+</style>
+<defs><marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="headfill" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="surface" width="800" height="432" rx="14"/><rect class="frame" x=".5" y=".5" width="799" height="431" rx="14"/>
+<text class="t1" x="32" y="40" font-size="20" font-weight="650" text-anchor="start">How Jev-AR routes a message</text>
+<text class="t2" x="32" y="64" font-size="13.5" text-anchor="start">Your route list is part of the input, so any list works without retraining · one forward pass</text>
+<rect class="node" x="32" y="100" width="190" height="72" rx="10"/>
+<text class="tm" x="46" y="122" font-size="11" font-weight="600" text-anchor="start">MESSAGE</text>
+<text class="t1" x="208" y="144" font-size="14" text-anchor="end">ابغى اكلم احد من خدمة</text>
+<text class="t1" x="208" y="162" font-size="14" text-anchor="end">العملاء ضروري</text>
+<rect class="node" x="32" y="188" width="190" height="124" rx="10"/>
+<text class="tm" x="46" y="210" font-size="11" font-weight="600" text-anchor="start">YOUR ROUTES · AT REQUEST TIME</text>
+<rect class="mark" x="46" y="222" width="7" height="7" rx="1.5"/>
+<text class="t1" x="61" y="230" font-size="12.5" text-anchor="start">FAQ</text>
+<rect class="mark" x="46" y="241" width="7" height="7" rx="1.5"/>
+<text class="t1" x="61" y="249" font-size="12.5" text-anchor="start">Escalate to a human</text>
+<rect class="mark" x="46" y="260" width="7" height="7" rx="1.5"/>
+<text class="t1" x="61" y="268" font-size="12.5" text-anchor="start">Benefits</text>
+<rect class="mark" x="46" y="279" width="7" height="7" rx="1.5"/>
+<text class="t1" x="61" y="287" font-size="12.5" text-anchor="start">Nearest in-network provider</text>
+<rect class="model" x="255" y="100" width="134" height="212" rx="10"/>
+<text class="t1" x="322.0" y="134" font-size="15" font-weight="650" text-anchor="middle">Encoder</text>
+<text class="t2" x="322.0" y="162" font-size="12.5" text-anchor="middle">mmBERT-base</text>
+<text class="t2" x="322.0" y="181" font-size="12.5" text-anchor="middle">307M parameters</text>
+<text class="t2" x="322.0" y="200" font-size="12.5" text-anchor="middle">22 layers</text>
+<text class="tm" x="322.0" y="238" font-size="12.5" text-anchor="middle">reads the message</text>
+<text class="tm" x="322.0" y="257" font-size="12.5" text-anchor="middle">and every route</text>
+<text class="tm" x="322.0" y="276" font-size="12.5" text-anchor="middle">together</text>
+<rect class="model" x="422" y="100" width="134" height="212" rx="10"/>
+<text class="t1" x="489.0" y="134" font-size="15" font-weight="650" text-anchor="middle">Decision head</text>
+<text class="t2" x="489.0" y="162" font-size="12.5" text-anchor="middle">15M parameters</text>
+<text class="t2" x="489.0" y="181" font-size="12.5" text-anchor="middle">2 transformer layers</text>
+<text class="t2" x="489.0" y="200" font-size="12.5" text-anchor="middle">+ scorer</text>
+<text class="tm" x="489.0" y="238" font-size="12.5" text-anchor="middle">one score per route,</text>
+<text class="tm" x="489.0" y="257" font-size="12.5" text-anchor="middle">read at that route's</text>
+<text class="tm" x="489.0" y="276" font-size="12.5" text-anchor="middle">marker</text>
+<rect class="node" x="589" y="100" width="178" height="212" rx="10"/>
+<text class="tm" x="603" y="122" font-size="11" font-weight="600" text-anchor="start">PROBABILITIES</text>
+<text class="t1" x="603" y="142" font-size="12" font-weight="600" text-anchor="start">Escalate to a human</text>
+<text class="t1" x="753" y="142" font-size="12" font-weight="600" text-anchor="end">0.93</text>
+<rect class="track" x="603" y="148" width="150" height="5" rx="2.5"/>
+<rect class="bar" x="603" y="148" width="138.9" height="5" rx="2.5"/>
+<text class="t2" x="603" y="169" font-size="12" text-anchor="start">Nearest provider</text>
+<text class="t2" x="753" y="169" font-size="12" text-anchor="end">0.04</text>
+<rect class="track" x="603" y="175" width="150" height="5" rx="2.5"/>
+<rect class="barctx" x="603" y="175" width="5.7" height="5" rx="2.5"/>
+<text class="t2" x="603" y="196" font-size="12" text-anchor="start">FAQ</text>
+<text class="t2" x="753" y="196" font-size="12" text-anchor="end">0.02</text>
+<rect class="track" x="603" y="202" width="150" height="5" rx="2.5"/>
+<rect class="barctx" x="603" y="202" width="3.3" height="5" rx="2.5"/>
+<text class="t2" x="603" y="223" font-size="12" text-anchor="start">Benefits</text>
+<text class="t2" x="753" y="223" font-size="12" text-anchor="end">0.01</text>
+<rect class="track" x="603" y="229" width="150" height="5" rx="2.5"/>
+<rect class="barctx" x="603" y="229" width="3.0" height="5" rx="2.5"/>
+<line class="rule" x1="603" x2="753" y1="246" y2="246"/>
+<text class="ta" x="603" y="268" font-size="13" font-weight="650" text-anchor="start">→ Escalate to a human</text>
+<text class="t2" x="603" y="287" font-size="12" text-anchor="start">0.93 ≥ 0.72: act</text>
+<text class="tm" x="603" y="304" font-size="11.5" text-anchor="start">below 0.72: escalate</text>
+<line class="edge" x1="226" y1="206.0" x2="244" y2="206.0" marker-end="url(#head)"/>
+<line class="edge" x1="393" y1="206.0" x2="411" y2="206.0" marker-end="url(#head)"/>
+<line class="edge" x1="560" y1="206.0" x2="578" y2="206.0" marker-end="url(#head)"/>
+<text class="tm" x="32" y="346" font-size="11" font-weight="600" text-anchor="start">INPUT SEQUENCE</text>
+<rect class="tok" x="32" y="358" width="50.5" height="24" rx="6"/>
+<text class="t2" x="40" y="374.5" font-size="12" text-anchor="start">[CLS]</text>
+<rect class="tok" x="88.5" y="358" width="91.9" height="24" rx="6"/>
+<text class="t2" x="96.5" y="374.5" font-size="12" text-anchor="start">instruction</text>
+<rect class="tok" x="186.4" y="358" width="50.5" height="24" rx="6"/>
+<text class="t2" x="194.4" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tok" x="242.9" y="358" width="49.7" height="24" rx="6"/>
+<rect class="tokm" x="250.9" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="263.9" y="374.5" font-size="12" text-anchor="start">FAQ</text>
+<rect class="tok" x="298.6" y="358" width="91.1" height="24" rx="6"/>
+<rect class="tokm" x="306.6" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="319.6" y="374.5" font-size="12" text-anchor="start">Escalate…</text>
+<rect class="tok" x="395.70000000000005" y="358" width="84.2" height="24" rx="6"/>
+<rect class="tokm" x="403.70000000000005" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="416.70000000000005" y="374.5" font-size="12" text-anchor="start">Benefits</text>
+<rect class="tok" x="485.90000000000003" y="358" width="84.2" height="24" rx="6"/>
+<rect class="tokm" x="493.90000000000003" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="506.90000000000003" y="374.5" font-size="12" text-anchor="start">Nearest…</text>
+<rect class="tok" x="576.1" y="358" width="50.5" height="24" rx="6"/>
+<text class="t2" x="584.1" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tok" x="632.6" y="358" width="64.3" height="24" rx="6"/>
+<text class="t2" x="640.6" y="374.5" font-size="12" text-anchor="start">message</text>
+<rect class="tok" x="702.9000000000001" y="358" width="50.5" height="24" rx="6"/>
+<text class="t2" x="710.9000000000001" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tokm" x="32" y="399.5" width="7" height="7" rx="1.5"/>
+<text class="tm" x="45" y="408" font-size="11.5" text-anchor="start">marks each route: the decision head reads that route's score at its marker. Instruction + routes: up to 512 tokens; 640 in total.</text>
+</svg>
