@@ -35,6 +35,9 @@ Supply your routes at request time. Jev-AR scores them jointly in one forward pa
   per-call cost, and your data stays on your machine.
 - **Close to much larger systems.** On 60 routes it is 2.8 points from Jev 1.13 (a closed API) and 6.6 points from
   Qwen3.8-27B, at a fraction of their latency. On 20-route lists it is on par with Jev.
+- **Built on Laya multilingual.** Jev-AR is fine-tuned from [Laya multilingual](https://huggingface.co/convaiinnovations/laya), an open
+  decision model with the same architecture. Our Arabic training takes it from 42.0% to 83.4% on 60 routes, and from
+  13 to 38 of 40 on the unseen-domain test.
 
 ## 30-second example
 
@@ -73,7 +76,7 @@ router.route("وش آخر أخبار أسعار الذهب اليوم؟", tools)
 1. **One sequence.** The message and your routes are joined into one input, with a marker token before each route.
 2. **Read together.** The mmBERT-base encoder reads the whole sequence, so each route is judged against the message
    and against the other routes.
-3. **One score per route.** A 15M decision head scores every route at its marker. A softmax, with a temperature
+3. **One score per route.** A 15M decision head (Laya's design) scores every route at its marker. A softmax, with a temperature
    fitted on development data, turns the scores into probabilities. When the top probability is below 0.72,
    `escalate` is `True`.
 
@@ -152,13 +155,16 @@ held-out queries in MSA, Emirati, Saudi and code-switched Arabic. Accuracy in %,
 | **Jev-AR** | **322M** | **local** | **83.4** <sub>[81.2–85.4]</sub> | **90.0** <sub>[88.4–91.4]</sub> | **10 ms** |
 | mmBERT-base, fine-tuned classifier | 307M | local | 76.5 | 79.8 | 6 ms |
 | multilingual-E5-base + logistic regression | 278M | local | 72.4 | 77.4 | 4 ms |
+| Laya multilingual (Jev-AR's starting point) ‡ | 322M | local | 42.0 | 56.4 | 11 ms |
 
-<sub>Batch 1. Local models ran on an RTX 5090 Laptop GPU. † Client-side round trip, network included.</sub>
+<sub>Batch 1. Local models ran on an RTX 5090 Laptop GPU. † Client-side round trip, network included. ‡ The open
+model Jev-AR was fine-tuned from, as released. Every system gets the same inputs, so Laya's route budget was raised
+from its default 256 tokens to Jev-AR's 512.</sub>
 
 **Unseen-domain routing** ([Jev-AR Bench](https://huggingface.co/datasets/atmaneayoub/jev-ar-bench)): one RAG app
 of a kind never seen in training, with 6 routes, and each question routed over an English and an
 Arabic route list (40 decisions). Jev-AR scores **38 / 40**, with **0** answers changed when the list is
-reversed. Jev 1.13 and Qwen3.8-27B score 40 / 40.
+reversed. Jev 1.13 and Qwen3.8-27B score 40 / 40; Laya multilingual, Jev-AR's starting point, scores 13 / 40.
 
 Per-dialect results, robustness and the evaluation protocol are on the
 [model card](https://huggingface.co/atmaneayoub/jev-ar).
