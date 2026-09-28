@@ -19,8 +19,8 @@ Supply your routes at request time. Jev-AR scores them jointly in one forward pa
 **a probability for every route**, and **an escalation signal** for when it isn't confident enough to act.
 
 <p align="center">
-  <img src="assets/jev-ar-accuracy-latency.svg" width="780"
-       alt="Accuracy vs. latency: Jev-AR 83.4% at 10 ms; Jev 1.13 86.2% at 370 ms; Qwen3.8-27B 90.0% at 634 ms">
+  <img src="assets/jev-ar-demo.svg" width="780"
+       alt="Terminal demo: Jev-AR routes Emirati, Saudi, mixed and off-topic messages over 60 government routes, then an assistant's four tools, with confidence and per-call time">
 </p>
 
 ## Why Jev-AR
@@ -136,6 +136,11 @@ router.route("ابي اجدد الاقامة")
 > logical core is several times slower on laptop CPUs.
 
 ## Results
+
+<p align="center">
+  <img src="assets/jev-ar-accuracy-latency.svg" width="780"
+       alt="Accuracy vs. latency: Jev-AR 83.4% at 10 ms; Jev 1.13 86.2% at 370 ms; Qwen3.8-27B 90.0% at 634 ms">
+</p>
 
 **Gulf-Arabic routing** ([Jev-AR Bench](https://huggingface.co/datasets/atmaneayoub/jev-ar-bench)): 4,974
 held-out queries in MSA, Emirati, Saudi and code-switched Arabic. Accuracy in %, with 95% confidence intervals.

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use Jev-AR or its benchmark, please cite it as below."
+type: software
+title: "Jev-AR: Arabic Intent Routing for MSA, Gulf Dialects and Code-Switching"
+abstract: >-
+  A 322M local decision model for fast Arabic intent routing across MSA, Emirati, Saudi and code-switched Arabic.
+  Routes are supplied at request time and scored jointly in one forward pass, with calibrated probabilities and an
+  escalation signal.
+authors:
+  - given-names: Ayoub
+    family-names: Atmane
+    alias: atmaneayoub
+    email: ayoubatmane23@gmail.com
+version: 1.0.0
+date-released: 2026-09-25
+repository-code: "https://github.com/atmaneayoubdev/jev-ar"
+url: "https://huggingface.co/atmaneayoub/jev-ar"
+license: Apache-2.0
+keywords:
+  - arabic
+  - gulf-arabic
+  - code-switching
+  - intent-routing
+  - rag
+  - agents

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 585" width="920" height="585" role="img" aria-labelledby="t d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+<title id="t">Jev-AR demo</title>
+<desc id="d">ابا اجدد الاقامة مالتي وايد مستعجل -&gt; تجديد الإقامة 0.93; كيف اسدد مخالفات ساهر؟ -&gt; المخالفات المرورية 1.00; I lost my Emirates ID، شو المطلوب عشان أطلع بدل فاقد؟ -&gt; بدل فاقد أو تالف للهوية 1.00; كم سعر الايفون الجديد عند اكسترا؟ -&gt; ليس طلب خدمة حكومية 1.00; وش آخر أخبار أسعار الذهب اليوم؟ -&gt; Web search 0.88; أبا أأجل الاجتماع لبكرة العصر -&gt; Calendar 0.95; عندي سؤال -&gt; Human agent 0.65</desc>
+<style>
+.bg{fill:#0f1115}.bar{fill:#1a1d23}.fg{fill:#e6e8eb}.bold{fill:#ffffff}.dim{fill:#8b919a}.blue{fill:#58a6ff}.green{fill:#3fb950}.amber{fill:#d29922}
+text{white-space:pre}
+@keyframes k0{0%,2.22%{opacity:0}3.61%,97%{opacity:1}100%{opacity:0}}.l0{opacity:0;animation:k0 18.0s linear infinite}
+@keyframes k1{0%,5.00%{opacity:0}6.39%,97%{opacity:1}100%{opacity:0}}.l1{opacity:0;animation:k1 18.0s linear infinite}
+@keyframes k2{0%,7.78%{opacity:0}9.17%,97%{opacity:1}100%{opacity:0}}.l2{opacity:0;animation:k2 18.0s linear infinite}
+@keyframes k3{0%,10.83%{opacity:0}12.22%,97%{opacity:1}100%{opacity:0}}.l3{opacity:0;animation:k3 18.0s linear infinite}
+@keyframes k4{0%,15.83%{opacity:0}17.22%,97%{opacity:1}100%{opacity:0}}.l4{opacity:0;animation:k4 18.0s linear infinite}
+@keyframes k5{0%,18.89%{opacity:0}20.28%,97%{opacity:1}100%{opacity:0}}.l5{opacity:0;animation:k5 18.0s linear infinite}
+@keyframes k6{0%,23.89%{opacity:0}25.28%,97%{opacity:1}100%{opacity:0}}.l6{opacity:0;animation:k6 18.0s linear infinite}
+@keyframes k7{0%,26.94%{opacity:0}28.33%,97%{opacity:1}100%{opacity:0}}.l7{opacity:0;animation:k7 18.0s linear infinite}
+@keyframes k8{0%,31.94%{opacity:0}33.33%,97%{opacity:1}100%{opacity:0}}.l8{opacity:0;animation:k8 18.0s linear infinite}
+@keyframes k9{0%,35.00%{opacity:0}36.39%,97%{opacity:1}100%{opacity:0}}.l9{opacity:0;animation:k9 18.0s linear infinite}
+@keyframes k10{0%,40.00%{opacity:0}41.39%,97%{opacity:1}100%{opacity:0}}.l10{opacity:0;animation:k10 18.0s linear infinite}
+@keyframes k11{0%,42.78%{opacity:0}44.17%,97%{opacity:1}100%{opacity:0}}.l11{opacity:0;animation:k11 18.0s linear infinite}
+@keyframes k12{0%,45.56%{opacity:0}46.94%,97%{opacity:1}100%{opacity:0}}.l12{opacity:0;animation:k12 18.0s linear infinite}
+@keyframes k13{0%,48.61%{opacity:0}50.00%,97%{opacity:1}100%{opacity:0}}.l13{opacity:0;animation:k13 18.0s linear infinite}
+@keyframes k14{0%,53.61%{opacity:0}55.00%,97%{opacity:1}100%{opacity:0}}.l14{opacity:0;animation:k14 18.0s linear infinite}
+@keyframes k15{0%,56.67%{opacity:0}58.06%,97%{opacity:1}100%{opacity:0}}.l15{opacity:0;animation:k15 18.0s linear infinite}
+@keyframes k16{0%,61.67%{opacity:0}63.06%,97%{opacity:1}100%{opacity:0}}.l16{opacity:0;animation:k16 18.0s linear infinite}
+@keyframes k17{0%,64.72%{opacity:0}66.11%,97%{opacity:1}100%{opacity:0}}.l17{opacity:0;animation:k17 18.0s linear infinite}
+@media (prefers-reduced-motion: reduce){.l0,.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12,.l13,.l14,.l15,.l16,.l17{animation:none;opacity:1}}
+</style>
+<rect class="bg" width="920" height="585" rx="12"/>
+<path class="bar" d="M0,12 a12,12 0 0 1 12,-12 h896 a12,12 0 0 1 12,12 v22 h-920 z"/>
+<circle cx="22" cy="17" r="5.5" fill="#ff5f57"/>
+<circle cx="40" cy="17" r="5.5" fill="#febc2e"/>
+<circle cx="58" cy="17" r="5.5" fill="#28c840"/>
+<text x="460.0" y="21.5" class="dim" font-size="12" text-anchor="middle">jev-ar · live routing</text>
+<g class="l0"><text x="36" y="72" class="dim" font-size="13" text-anchor="start">Jev-AR · 322M · one forward pass per message · RTX 5090 Laptop GPU</text></g>
+<g class="l1"><text x="36" y="110" class="bold" font-size="14.5" text-anchor="start" font-weight="650">1 · 60 built-in Gulf government routes</text></g>
+<g class="l2"><text x="36" y="140" class="dim" font-size="12.5" text-anchor="start">[Emirati]</text><text x="130" y="140" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="140" class="fg" font-size="13.5" text-anchor="start">ابا اجدد الاقامة مالتي وايد مستعجل</text></g>
+<g class="l3"><text x="130" y="161" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="161" class="blue" font-size="13.5" text-anchor="start" font-weight="600">تجديد الإقامة</text><text x="372" y="161" class="dim" font-size="12.5" text-anchor="start">(Renew residence permit)</text><text x="674" y="161" class="bold" font-size="13.5" text-anchor="end" font-weight="650">0.93</text><text x="694" y="161" class="green" font-size="13" text-anchor="start">✓ confident</text><text x="892" y="161" class="dim" font-size="12.5" text-anchor="end">10 ms</text></g>
+<g class="l4"><text x="36" y="191" class="dim" font-size="12.5" text-anchor="start">[Saudi]</text><text x="130" y="191" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="191" class="fg" font-size="13.5" text-anchor="start">كيف اسدد مخالفات ساهر؟</text></g>
+<g class="l5"><text x="130" y="212" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="212" class="blue" font-size="13.5" text-anchor="start" font-weight="600">المخالفات المرورية</text><text x="372" y="212" class="dim" font-size="12.5" text-anchor="start">(Traffic fines)</text><text x="674" y="212" class="bold" font-size="13.5" text-anchor="end" font-weight="650">1.00</text><text x="694" y="212" class="green" font-size="13" text-anchor="start">✓ confident</text><text x="892" y="212" class="dim" font-size="12.5" text-anchor="end">11 ms</text></g>
+<g class="l6"><text x="36" y="242" class="dim" font-size="12.5" text-anchor="start">[Mixed]</text><text x="130" y="242" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="242" class="fg" font-size="13.5" text-anchor="start">I lost my Emirates ID، شو المطلوب عشان أطلع بدل فاقد؟</text></g>
+<g class="l7"><text x="130" y="263" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="263" class="blue" font-size="13.5" text-anchor="start" font-weight="600">بدل فاقد أو تالف للهوية</text><text x="372" y="263" class="dim" font-size="12.5" text-anchor="start">(Replace lost or damaged ID)</text><text x="674" y="263" class="bold" font-size="13.5" text-anchor="end" font-weight="650">1.00</text><text x="694" y="263" class="green" font-size="13" text-anchor="start">✓ confident</text><text x="892" y="263" class="dim" font-size="12.5" text-anchor="end">11 ms</text></g>
+<g class="l8"><text x="36" y="293" class="dim" font-size="12.5" text-anchor="start">[Off-topic]</text><text x="130" y="293" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="293" class="fg" font-size="13.5" text-anchor="start">كم سعر الايفون الجديد عند اكسترا؟</text></g>
+<g class="l9"><text x="130" y="314" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="314" class="blue" font-size="13.5" text-anchor="start" font-weight="600">ليس طلب خدمة حكومية</text><text x="372" y="314" class="dim" font-size="12.5" text-anchor="start">(Not a government-service request)</text><text x="674" y="314" class="bold" font-size="13.5" text-anchor="end" font-weight="650">1.00</text><text x="694" y="314" class="dim" font-size="13" text-anchor="start">○ out of scope</text><text x="892" y="314" class="dim" font-size="12.5" text-anchor="end">10 ms</text></g>
+<g class="l10"><text x="36" y="352" class="bold" font-size="14.5" text-anchor="start" font-weight="650">2 · Your own routes, given at request time</text><text x="425.91111111111104" y="352" class="dim" font-size="13" text-anchor="start">an assistant&#x27;s tools, no retraining</text></g>
+<g class="l11"><text x="36" y="374" class="dim" font-size="13" text-anchor="start">routes:  Calendar  ·  Email  ·  Web search  ·  Human agent</text></g>
+<g class="l12"><text x="36" y="404" class="dim" font-size="12.5" text-anchor="start">[Saudi]</text><text x="130" y="404" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="404" class="fg" font-size="13.5" text-anchor="start">وش آخر أخبار أسعار الذهب اليوم؟</text></g>
+<g class="l13"><text x="130" y="425" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="425" class="blue" font-size="13.5" text-anchor="start" font-weight="600">Web search</text><text x="674" y="425" class="bold" font-size="13.5" text-anchor="end" font-weight="650">0.88</text><text x="694" y="425" class="green" font-size="13" text-anchor="start">✓ confident</text><text x="892" y="425" class="dim" font-size="12.5" text-anchor="end">8 ms</text></g>
+<g class="l14"><text x="36" y="455" class="dim" font-size="12.5" text-anchor="start">[Emirati]</text><text x="130" y="455" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="455" class="fg" font-size="13.5" text-anchor="start">أبا أأجل الاجتماع لبكرة العصر</text></g>
+<g class="l15"><text x="130" y="476" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="476" class="blue" font-size="13.5" text-anchor="start" font-weight="600">Calendar</text><text x="674" y="476" class="bold" font-size="13.5" text-anchor="end" font-weight="650">0.95</text><text x="694" y="476" class="green" font-size="13" text-anchor="start">✓ confident</text><text x="892" y="476" class="dim" font-size="12.5" text-anchor="end">8 ms</text></g>
+<g class="l16"><text x="36" y="506" class="dim" font-size="12.5" text-anchor="start">[Vague]</text><text x="130" y="506" class="bold" font-size="13.5" text-anchor="start">›</text><text x="146" y="506" class="fg" font-size="13.5" text-anchor="start">عندي سؤال</text></g>
+<g class="l17"><text x="130" y="527" class="blue" font-size="13.5" text-anchor="start">→</text><text x="150" y="527" class="blue" font-size="13.5" text-anchor="start" font-weight="600">Human agent</text><text x="674" y="527" class="bold" font-size="13.5" text-anchor="end" font-weight="650">0.65</text><text x="694" y="527" class="amber" font-size="13" text-anchor="start">⚠ unsure → escalate</text><text x="892" y="527" class="dim" font-size="12.5" text-anchor="end">8 ms</text></g>
+<text x="36" y="567" class="dim" font-size="11.5">Real outputs of the released model; times are measured per call (RTX 5090 Laptop GPU, batch 1).</text>
+</svg>
