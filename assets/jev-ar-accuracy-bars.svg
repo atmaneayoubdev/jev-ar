@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Gulf-Arabic intent routing: accuracy on 60 routes</title>
+<desc id="d">Qwen3.8-27B (27B · 634 ms, round trip): 90.0%; Jev 1.13 (closed API · 370 ms, round trip): 86.2%; Jev-AR (322M · 10 ms): 83.4%; mmBERT classifier (307M · 6 ms): 76.5%; mE5 + LogReg (278M · 4 ms): 72.4%; Laya multilingual (322M · 11 ms): 42.0%</desc>
+<style>
+  .surface{fill:#fcfcfb}.frame{fill:none;stroke:rgba(11,11,11,.10)}
+  .t1{fill:#0b0b0b}.t2{fill:#52514e}.tm{fill:#898781}
+  .grid{stroke:#ecebe5;stroke-width:1}.axis{stroke:#c3c2b7;stroke-width:1}
+  .ours{fill:#2a78d6}.ctx{fill:#c3c2b7}
+  @media (prefers-color-scheme: dark){
+    .surface{fill:#1a1a19}.frame{stroke:rgba(255,255,255,.10)}
+    .t1{fill:#ffffff}.t2{fill:#c3c2b7}.tm{fill:#898781}
+    .grid{stroke:#262625}.axis{stroke:#383835}
+    .ours{fill:#3987e5}.ctx{fill:#4a4a46}
+  }
+</style>
+<rect class="surface" width="800" height="470" rx="14"/><rect class="frame" x=".5" y=".5" width="799" height="469" rx="14"/>
+<text class="t1" x="40" y="42" font-size="20" font-weight="650">Gulf-Arabic intent routing</text>
+<text class="t2" x="40" y="66" font-size="13.5">Accuracy on 60 routes (%), higher is better · Jev-AR Bench, 4,974 held-out queries</text>
+<line class="grid" x1="40" x2="776" y1="292.0" y2="292.0"/>
+<line class="grid" x1="40" x2="776" y1="234.0" y2="234.0"/>
+<line class="grid" x1="40" x2="776" y1="176.0" y2="176.0"/>
+<line class="grid" x1="40" x2="776" y1="118.0" y2="118.0"/>
+<path class="ctx" d="M68.3,350 V145.1 a4,4 0 0 1 4,-4 H130.3 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t2" x="101.3" y="131.1" font-size="16" font-weight="600" text-anchor="middle">90.0</text>
+<text class="t1" x="101.3" y="376" font-size="13.5" font-weight="500" text-anchor="middle">Qwen3.8-27B</text>
+<text class="tm" x="101.3" y="395" font-size="12" text-anchor="middle">27B · 634 ms †</text>
+<path class="ctx" d="M191.0,350 V153.9 a4,4 0 0 1 4,-4 H253.0 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t2" x="224.0" y="139.9" font-size="16" font-weight="600" text-anchor="middle">86.2</text>
+<text class="t1" x="224.0" y="376" font-size="13.5" font-weight="500" text-anchor="middle">Jev 1.13</text>
+<text class="tm" x="224.0" y="395" font-size="12" text-anchor="middle">closed API · 370 ms †</text>
+<path class="ours" d="M313.7,350 V160.5 a4,4 0 0 1 4,-4 H375.7 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t1" x="346.7" y="146.5" font-size="18" font-weight="700" text-anchor="middle">83.4</text>
+<text class="t1" x="346.7" y="376" font-size="14.5" font-weight="700" text-anchor="middle">Jev-AR</text>
+<text class="tm" x="346.7" y="395" font-size="12" text-anchor="middle">322M · 10 ms</text>
+<path class="ctx" d="M436.3,350 V176.6 a4,4 0 0 1 4,-4 H498.3 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t2" x="469.3" y="162.6" font-size="16" font-weight="600" text-anchor="middle">76.5</text>
+<text class="t1" x="469.3" y="376" font-size="13.5" font-weight="500" text-anchor="middle">mmBERT classifier</text>
+<text class="tm" x="469.3" y="395" font-size="12" text-anchor="middle">307M · 6 ms</text>
+<path class="ctx" d="M559.0,350 V185.9 a4,4 0 0 1 4,-4 H621.0 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t2" x="592.0" y="171.9" font-size="16" font-weight="600" text-anchor="middle">72.4</text>
+<text class="t1" x="592.0" y="376" font-size="13.5" font-weight="500" text-anchor="middle">mE5 + LogReg</text>
+<text class="tm" x="592.0" y="395" font-size="12" text-anchor="middle">278M · 4 ms</text>
+<path class="ctx" d="M681.7,350 V256.6 a4,4 0 0 1 4,-4 H743.7 a4,4 0 0 1 4,4 V350 z"/>
+<text class="t2" x="714.7" y="242.6" font-size="16" font-weight="600" text-anchor="middle">42.0</text>
+<text class="t1" x="714.7" y="376" font-size="13.5" font-weight="500" text-anchor="middle">Laya multilingual</text>
+<text class="tm" x="714.7" y="395" font-size="12" text-anchor="middle">322M · 11 ms</text>
+<line class="axis" x1="40" x2="776" y1="350" y2="350"/>
+<text class="tm" x="40" y="446" font-size="11.5">Latency: median per query, batch 1, on an RTX 5090 Laptop GPU for local models; † client round trip, network included.</text>
+</svg>

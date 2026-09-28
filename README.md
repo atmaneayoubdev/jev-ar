@@ -141,6 +141,11 @@ router.route("ابي اجدد الاقامة")
 ## Results
 
 <p align="center">
+  <img src="assets/jev-ar-accuracy-bars.svg" width="780"
+       alt="Bar chart, accuracy on 60 routes: Qwen3.8-27B 90.0, Jev 1.13 86.2, Jev-AR 83.4, mmBERT classifier 76.5, mE5 + LogReg 72.4, Laya multilingual 42.0">
+</p>
+
+<p align="center">
   <img src="assets/jev-ar-accuracy-latency.svg" width="780"
        alt="Accuracy vs. latency: Jev-AR 83.4% at 10 ms; Jev 1.13 86.2% at 370 ms; Qwen3.8-27B 90.0% at 634 ms">
 </p>
