@@ -77,30 +77,30 @@
 <line class="edge" x1="393" y1="206.0" x2="411" y2="206.0" marker-end="url(#head)"/>
 <line class="edge" x1="560" y1="206.0" x2="578" y2="206.0" marker-end="url(#head)"/>
 <text class="tm" x="32" y="346" font-size="11" font-weight="600" text-anchor="start">INPUT SEQUENCE</text>
-<rect class="tok" x="32" y="358" width="50.5" height="24" rx="6"/>
-<text class="t2" x="40" y="374.5" font-size="12" text-anchor="start">[CLS]</text>
-<rect class="tok" x="88.5" y="358" width="91.9" height="24" rx="6"/>
-<text class="t2" x="96.5" y="374.5" font-size="12" text-anchor="start">instruction</text>
-<rect class="tok" x="186.4" y="358" width="50.5" height="24" rx="6"/>
-<text class="t2" x="194.4" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
-<rect class="tok" x="242.9" y="358" width="84.2" height="24" rx="6"/>
-<rect class="tokm" x="250.9" y="366.5" width="7" height="7" rx="1.5"/>
-<text class="t2" x="263.9" y="374.5" font-size="12" text-anchor="start">Calendar</text>
-<rect class="tok" x="333.1" y="358" width="63.5" height="24" rx="6"/>
-<rect class="tokm" x="341.1" y="366.5" width="7" height="7" rx="1.5"/>
-<text class="t2" x="354.1" y="374.5" font-size="12" text-anchor="start">Email</text>
-<rect class="tok" x="402.6" y="358" width="98.0" height="24" rx="6"/>
-<rect class="tokm" x="410.6" y="366.5" width="7" height="7" rx="1.5"/>
-<text class="t2" x="423.6" y="374.5" font-size="12" text-anchor="start">Web search</text>
-<rect class="tok" x="506.6" y="358" width="104.9" height="24" rx="6"/>
-<rect class="tokm" x="514.6" y="366.5" width="7" height="7" rx="1.5"/>
-<text class="t2" x="527.6" y="374.5" font-size="12" text-anchor="start">Human agent</text>
-<rect class="tok" x="617.5" y="358" width="50.5" height="24" rx="6"/>
-<text class="t2" x="625.5" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
-<rect class="tok" x="674.0" y="358" width="64.3" height="24" rx="6"/>
-<text class="t2" x="682.0" y="374.5" font-size="12" text-anchor="start">message</text>
-<rect class="tok" x="744.3" y="358" width="50.5" height="24" rx="6"/>
-<text class="t2" x="752.3" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tok" x="32" y="358" width="47.5" height="24" rx="6"/>
+<text class="t2" x="39" y="374.5" font-size="12" text-anchor="start">[CLS]</text>
+<rect class="tok" x="85.5" y="358" width="87.7" height="24" rx="6"/>
+<text class="t2" x="92.5" y="374.5" font-size="12" text-anchor="start">instruction</text>
+<rect class="tok" x="179.2" y="358" width="47.5" height="24" rx="6"/>
+<text class="t2" x="186.2" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tok" x="232.7" y="358" width="79.6" height="24" rx="6"/>
+<rect class="tokm" x="239.7" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="251.7" y="374.5" font-size="12" text-anchor="start">Calendar</text>
+<rect class="tok" x="318.29999999999995" y="358" width="59.5" height="24" rx="6"/>
+<rect class="tokm" x="325.29999999999995" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="337.29999999999995" y="374.5" font-size="12" text-anchor="start">Email</text>
+<rect class="tok" x="383.79999999999995" y="358" width="93.0" height="24" rx="6"/>
+<rect class="tokm" x="390.79999999999995" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="402.79999999999995" y="374.5" font-size="12" text-anchor="start">Web search</text>
+<rect class="tok" x="482.79999999999995" y="358" width="99.7" height="24" rx="6"/>
+<rect class="tokm" x="489.79999999999995" y="366.5" width="7" height="7" rx="1.5"/>
+<text class="t2" x="501.79999999999995" y="374.5" font-size="12" text-anchor="start">Human agent</text>
+<rect class="tok" x="588.5" y="358" width="47.5" height="24" rx="6"/>
+<text class="t2" x="595.5" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
+<rect class="tok" x="642.0" y="358" width="60.9" height="24" rx="6"/>
+<text class="t2" x="649.0" y="374.5" font-size="12" text-anchor="start">message</text>
+<rect class="tok" x="708.9" y="358" width="47.5" height="24" rx="6"/>
+<text class="t2" x="715.9" y="374.5" font-size="12" text-anchor="start">[SEP]</text>
 <rect class="tokm" x="32" y="399.5" width="7" height="7" rx="1.5"/>
 <text class="tm" x="45" y="408" font-size="11.5" text-anchor="start">marks each route: the decision head reads that route's score at its marker. Instruction + routes: up to 512 tokens; 640 in total.</text>
 </svg>
