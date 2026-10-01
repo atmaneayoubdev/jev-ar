@@ -38,6 +38,9 @@ Supply your routes at request time. Jev-AR scores them jointly in one forward pa
 - **Built on Laya multilingual.** Jev-AR is fine-tuned from [Laya multilingual](https://huggingface.co/convaiinnovations/laya), an open
   decision model with the same architecture. Our Arabic training takes it from 42.0% to 83.4% on 60 routes, and from
   13 to 38 of 40 on the unseen-domain test.
+- **Early interest.** In its first week (25 Sep–1 Oct 2026), 12 people in 7 countries requested access to the
+  weights, mostly for research, and the [benchmark](https://huggingface.co/datasets/atmaneayoub/jev-ar-bench) was
+  downloaded 436 times.
 
 ## 30-second example
 
